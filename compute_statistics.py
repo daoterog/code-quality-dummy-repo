@@ -10,3 +10,7 @@ def compute_median(array: list) -> float:
     
 def compute_mode(array: list) -> float:
     return max(set(array), key=array.count)
+
+def compute_variance(array: list) -> float:
+    x_bar = compute_mean(array)
+    return sum(abs(x - x_bar) for x in array) / (len(array) - 1)
