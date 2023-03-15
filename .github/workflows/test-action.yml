@@ -1,0 +1,8 @@
+on: pull_request
+
+jobs:
+  code_review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Automatic Unit Tests
+        uses: EXIT83/code-quality-ai@api-communication
