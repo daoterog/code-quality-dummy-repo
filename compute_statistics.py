@@ -7,3 +7,6 @@ def compute_median(array: list) -> float:
         return (array[len(array) // 2] + array[len(array) // 2 - 1]) / 2
     else:
         return array[len(array) // 2]
+    
+def compute_mode(array: list) -> float:
+    return max(set(array), key=array.count)
